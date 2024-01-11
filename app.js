@@ -12,11 +12,7 @@ const clientPath = path.join(__dirname, "client");
 
 mongoose
   .connect(
-    `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@fullstackblog.na8dy.mongodb.net/?retryWrites=true&w=majority`,
-    {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    }
+    `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@fullstackblog.na8dy.mongodb.net/?retryWrites=true&w=majority`
   )
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error(err));
