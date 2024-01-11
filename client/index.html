@@ -14,10 +14,10 @@
     />
     <title>Fullstack blog</title>
   </head>
-  <body>
-    <div class="container" style="padding-top: 50px;">
+  <body class="indigo lighten-4">
+    <div class="container" style="padding-top: 50px">
       <div class="row">
-        <div class="col s12 m8 offset-m2 16 offset-l3" id="posts">
+        <div class="col s12 m8 offset-m2 16 offset-13" id="posts">
           <div class="center">
             <div class="preloader-wrapper big active">
               <div class="spinner-layer spinner-blue">
@@ -36,31 +36,36 @@
         </div>
       </div>
     </div>
+
     <div class="fixed-action-btn">
       <a
-        class="btn-floating btn-large red modal-trigger"
+        class="btn-floating btn-large indigo darken-3 modal-trigger"
         data-target="createForm"
       >
         <i class="large material-icons">add</i>
       </a>
     </div>
+
     <div id="createForm" class="modal">
       <div class="modal-content">
-        <h4>Создать новый пост</h4>
+        <h4>Create a new post</h4>
         <div class="input-field">
           <input id="title" type="text" class="validate" required />
-          <label for="title">Название</label>
+          <label for="title">Title</label>
         </div>
         <div class="input-field">
           <textarea id="text" class="materialize-textarea"></textarea>
-          <label for="text">Текст</label>
+          <label for="text">Description</label>
         </div>
       </div>
       <div class="modal-footer">
-        <a class="waves-effect waves-light btn" id="createPost">Создать пост</a>
+        <a class="waves-effect waves-light indigo darken-3 btn" id="createPost"
+          >Create a post</a
+        >
       </div>
     </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
