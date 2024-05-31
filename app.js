@@ -11,9 +11,7 @@ const port = process.env.PORT || 5000;
 const clientPath = path.join(__dirname, "client");
 
 mongoose
-  .connect(
-    `mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@fullstackblog.na8dy.mongodb.net/?retryWrites=true&w=majority`
-  )
+  .connect(process.env.MONGODB_URL)
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error(err));
 
