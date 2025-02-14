@@ -1,4 +1,5 @@
-const BASE_URL = "/api/post";
+const apiPrefix = window.location.pathname.includes('/blog') ? '/blog' : '';
+const BASE_URL = `${apiPrefix}/api/post`;
 let posts = [];
 let modal;
 
